@@ -1,6 +1,407 @@
-#libros{
-    width: 100%;
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
 }
+
+header,section{
+    overflow-x: hidden;
+}
+
+/* Variables */
+
+$fuente1:"Ubuntu",sans-serif;
+$fuente2:"Roboto",sans-serif;
+$fuente3:"Poppins",sans-serif;
+$grad1: linear-gradient(90deg, rgba(243,182,207,1) 0%, rgba(207,182,215,1) 34%, rgba(187,182,219,1) 57%, rgba(164,183,224,1) 81%, rgba(71,185,244,1) 100%);
+
 .active{
     font-weight: 500;
+}
+
+header a{
+    font-family: $fuente1;
+    font-size: 0.9em;
+    color:black
+}
+header{
+    background: #cae38c;
+    background: $grad1;
+}
+
+header .nav-item:last-child{
+    padding-right: 10.5em;
+}
+header .nav-item{
+    padding: 0.9em;
+}
+header .navbar-brand{
+    padding-left: 8rem;
+    font-size: 40px;
+}
+header .nav-link:hover{
+    color: #fff;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+header .row .col-md-5{
+    padding:4.2vmin 1vmin
+}
+header .row .col-md-7{
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+    font-family: $fuente2;
+    color: #000;
+}
+header .row .col-md-5 img{
+    width: 120%;
+}
+header .container .col-md-7 h1{
+    padding: 1vmin;
+    letter-spacing: 2px;
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+}
+#libros{
+    margin-top: 50px;
+    transition: 0.3s ease;
+}
+header .container .col-md-7 p{
+    padding: 1vmin 5vmin;
+    font-size: 18px;
+}
+header .container .col-md-7 button{
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+#libros:hover{
+    transform: scale(1.1);
+}
+#libros:hover:active{
+    transform:scale(1);
+}
+header .navbar-brand:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+}
+
+/*Section 1*/
+
+.nosotros h2{
+    font-family: $fuente1;
+    font-size: 5vmin;
+    font-weight: bold;
+    padding-top: 3em;
+}
+.section-1{
+    padding: 20vmin 0;
+}
+.section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 110%;
+    height: auto;
+    border-radius: 0.2em;
+    transform: translate(-60px, -20px)
+}
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vim;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.4);
+    font-family: $fuente3;
+    z-index: 1;
+}
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 3em;
+}
+.section-1 .row .col-md-6 .panel p{
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*Section 2*/
+
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: url(assets/nubes.jpg);
+    background-position: -55rem -30rem;
+    background-size: 150%;
+    position: relative;
+}
+.cover .content{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin;
+}
+.cover .content h2{
+    font-family: $fuente1;
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+.cover .content p{
+    font-family: $fuente2;
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+.numeros .rect{
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: .5em;
+    box-shadow: 1px 2px 50px 0px rgba(93, 145, 205, 100);
+}
+.numeros{
+    margin-top: -15vmin;
+}
+.numeros .rect h3{
+    font-size: 5rem;
+    color: rgb(161, 202, 202);
+}
+.numeros .rect p{
+    font-family: $fuente2;
+}
+
+/*Precios*/
+
+.comprar h1{
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: $fuente3;
+}
+.comprar h4{
+    font-size: 4vmin;
+}
+.comprar p{
+    color: black;
+    font-size: 2vmin;
+    padding-bottom: 10vmin;
+}
+.comprar .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+.cards .title{
+    background: rgba(208, 241, 241, 0.1);
+    padding: 1.4rem 2.5rem;
+    font-size: 2vmin;
+}
+.card .card-text{
+    padding: 2.5rem 3rem;
+    color: black;
+}
+.card-body .pricing{
+    background: rgba(208, 241, 241, 0.1);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+.card-body .pricing h1{
+    font-size: 6vmin;
+    padding: 1em 0.5em;
+}
+
+/*Section 3*/
+
+.section-3{
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: $grad1;
+}
+.section-3 .col-md-12 h2{
+    padding: 2em 0 0.5em 0;
+    color: white;
+    font-size: 6vmin;
+    font-family: $fuente1;
+    text-shadow: 0 0 5px black;
+}
+.section-3 .col-md-12 p{
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: whitesmoke;
+    font-family: $fuente2;
+    font-size: 2.5vmin;
+    text-shadow: 0 0 3px black;
+}
+.section-3 .desktop{
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+    cursor: pointer;
+}
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+.section-3 .desktop p{
+    font-size: 2vmin;
+}
+
+/*Reseñas Section 4*/
+
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+    font-family: $fuente1;
+}
+
+.section-4 .team{
+    padding: 10vmin 4vmin;
+}
+.section-4 .card{
+    width: 22rem;
+    margin-top: 10vmin;
+}
+.section-4 .card .card-text{
+    padding: 0.5em;
+}
+.section-4 .card .card-body a{
+    font-size: 1.5em;
+}
+.section-4 .carousel-item{
+    padding-left: 3rem;
+}
+.border-radius{
+    border-radius: 340px;
+    width: 60%;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+/*Footer*/
+footer{
+    background: rgba(178, 141, 185, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+    font-family: $fuente1;
+}
+
+footer p span{
+    color: aquamarine;
+    text-shadow: 0 0 2px black;
+}
+footer input{
+    border: none !important;
+}
+footer input::placeholder{
+    color: white !important;
+}
+footer .input-group .input-group-text{
+    background: #d90368;
+    border: none;
+    cursor: pointer;
+}
+footer .column i{
+    color: #d90368;
+}
+footer .column i + i{
+    padding: 0 0.5em;
+}
+/*Carousel destinos*/
+
+.destinos{
+    width: 100%;
+    padding-top: 20vmin;
+}
+.destinos .carousel-item img{
+    border-radius: 25px !important;
+}
+.carousel-caption h5{
+    text-shadow: 0 0 5px black !important;
+    font-size: 4vmin !important;
+}
+.carousel-caption p{
+    text-shadow: 0 0 10px black !important;
+    font-size: 2vmin !important;
+}
+.textdestinos h2{
+    margin-top: 40px;
+    font-family: $fuente1;
+    font-size: 5vmin;
+    font-weight: bold;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+    .section-2 .cover{
+        background-position: -25vmin -10vmin;
+    }
+    .numeros .rect{
+        width: 10rem;
+        height: 8rem;
+    }
+    .numeros .rect h3{
+        font-size: 2rem;
+    }
+    .section-3{
+        height: inherit;
+        padding: 10vmin !important;
+    }
+    .section-3 .row h1{
+        padding: 6vmin 4vmin;
+    }
+    .section-3 .row .col-md-6{
+        text-align: center !important;
+    }
+    .section-3 .desktop i{
+        font-size: 8vmin;
+    }
+    .section-4 .carousel-item{
+        padding-left: 0.6rem;
+    }
+    .section-4 .team{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .section-4 .carousel-inner{
+        width: 24rem;
+    }
+    
+}
+
+@media only screen and (max-width:425px){
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+
+}
+@media only screen and (max-width:320){
+    .section-4 .card{
+        width: 18rem;
+    }
+    .section-4 .carousel-inner{
+        margin-left: -14vmin;
+    }
 }

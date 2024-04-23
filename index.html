@@ -18,7 +18,9 @@
         <nav class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">FlyLearn</a>
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-plane-up fa-bounce"></i>
+                    FlyLearn</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -50,8 +52,8 @@
                     <h1>Estudiar y viajar nunca fue tan facil</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores inventore, voluptas dolorum dolor facilis magnam. Laborum quidem omnis tenetur doloremque.</p>
                     <div class="d-flex flex-row flex-wrap justify-content-center">
-                        <button class="btn btn-light px-6 py-2 ">Nuestros precios</button>
-                        <button class="btn btn-light px-6 py-2">Contactanos</button>
+                        <button class="btn btn-light px-4 py-3 ">Nuestros precios</button>
+                        <button class="btn btn-light px-4 py-3">Contactanos</button>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12 h-25">
@@ -61,11 +63,52 @@
         </div>
     </header>
     <main>
+        <div class="container text-center pt-4 textdestinos"><h2>Algunos de nuestros destinos más aclamados</h2></div>
+        <!--Inicio carousel-->
+        <div class="container-fluid">
+            <section class="destinos d-flex justify-content-center">
+                <div class="carousel slide" id="carouselDemo" data-bs-ride="carousel" data-bs-wrap="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="assets/des1.jpg" class="w-100" alt="des1">
+                            <div class="carousel-caption">
+                                <h5>Auckland, NZ</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="5000">
+                            <img src="assets/des2.jpg" class="w-100" alt="des2">
+                            <div class="carousel-caption">
+                                <h5>Milwaukee, US</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="5000">
+                            <img src="assets/des3.jpg" class="w-100" alt="des3">
+                            <div class="carousel-caption">
+                                <h5>Paris, FR</h5>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+                    <div class="carousel-indicators">
+                        <button type="button" class="active" data-bs-target="#carouselDemo"data-bs-slide-to="0"></button>
+                        <button type="button"data-bs-target="#carouselDemo"data-bs-slide-to="1"></button>
+                        <button type="button"data-bs-target="#carouselDemo"data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--Fin carousel-->
         <!--Inicio plataformas-->
         <section class="section-3 container-fluid p-0 text-center">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <h1>Descargar nuestra app en todas las plataformas</h1>
+                    <h2>Descargar nuestra app en todas las plataformas</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius tenetur pariatur excepturi!</p>
                 </div>
             </div>
@@ -96,6 +139,47 @@
         </section>
         <!--Fin plataformas-->
     </main>
+    <footer>
+        <!--Inicio footer-->
+        <div class="container-fluid p-0">
+            <div class="row text-left">
+                <div class="col-md-5 col-sm-5">
+                    <h4 class="text-light">Sobre Nosotros</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, nesciunt.</p>
+                    <p class="pt-4 text-muted">
+                        Copyright © 2024 <span>FlyLearn</span>. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="text-light">Boletín</h4>
+                    <p>Mantente informado sobre nuevas ofertas.</p>
+                    <form class="form-inline">
+                        <div class="col pl-0">
+                            <div class="input-group pr-5">
+                                <input type="text" class="form-control bg-dark text-white" placeholder="Email">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-light">Siguenos</h4>
+                    <p class="text-muted">En nuestras redes</p>
+                    <div class="column">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!--Fin footer-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
